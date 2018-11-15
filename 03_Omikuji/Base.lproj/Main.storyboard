@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_3_Omikuji" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home2" translatesAutoresizingMaskIntoConstraints="NO" id="eIY-AX-9XO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ku-Kz-wSB">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1E-c0-LS0">
+                                <rect key="frame" x="95" y="593" width="185" height="35"/>
+                                <color key="backgroundColor" red="0.66528428890000002" green="1" blue="0.77490104670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="Tell!">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tellFortune:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5r-eH-Ldy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your fortune is..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8n-AA-ew6">
+                                <rect key="frame" x="28" y="524" width="318" height="28"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Omikuji" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PL-r5-Lj5">
+                                <rect key="frame" x="28" y="72" width="318" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1PL-r5-Lj5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="13B-dm-dMy"/>
+                            <constraint firstItem="1PL-r5-Lj5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="1sF-B1-nnD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y1E-c0-LS0" secondAttribute="trailing" constant="95" id="3Vy-Vk-az5"/>
+                            <constraint firstItem="3Ku-Kz-wSB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="6KM-tS-LK7"/>
+                            <constraint firstItem="eIY-AX-9XO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8ob-7f-Yii"/>
+                            <constraint firstItem="eIY-AX-9XO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GaW-Lx-tVT"/>
+                            <constraint firstItem="Y8n-AA-ew6" firstAttribute="top" secondItem="3Ku-Kz-wSB" secondAttribute="bottom" constant="41" id="Hmv-RE-X87"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y8n-AA-ew6" secondAttribute="trailing" constant="29" id="IYU-Qd-Cch"/>
+                            <constraint firstItem="3Ku-Kz-wSB" firstAttribute="top" secondItem="1PL-r5-Lj5" secondAttribute="bottom" constant="66" id="LcR-5B-1IC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ku-Kz-wSB" secondAttribute="trailing" constant="38" id="OPp-Su-OoZ"/>
+                            <constraint firstItem="y1E-c0-LS0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="Wfu-32-DrF"/>
+                            <constraint firstItem="Y8n-AA-ew6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="bE0-hj-wM3"/>
+                            <constraint firstItem="y1E-c0-LS0" firstAttribute="top" secondItem="Y8n-AA-ew6" secondAttribute="bottom" constant="41" id="dZJ-JG-35E"/>
+                            <constraint firstItem="eIY-AX-9XO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f4l-kx-3a6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y1E-c0-LS0" secondAttribute="bottom" constant="39" id="gp1-Qb-AUe"/>
+                            <constraint firstItem="eIY-AX-9XO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pwN-sX-85n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1PL-r5-Lj5" secondAttribute="trailing" constant="29" id="xKU-HU-obp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgImage" destination="eIY-AX-9XO" id="1l0-fp-XMJ"/>
+                        <outlet property="omikuji" destination="1PL-r5-Lj5" id="Q5s-Yl-hKC"/>
+                        <outlet property="result" destination="Y8n-AA-ew6" id="Enm-b9-tsj"/>
+                        <outlet property="resultImage" destination="3Ku-Kz-wSB" id="q6l-eu-OHu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home2" width="5184" height="3456"/>
+    </resources>
+</document>
